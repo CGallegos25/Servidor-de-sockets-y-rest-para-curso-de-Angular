@@ -5,7 +5,7 @@ import { SERVER_PORT } from "./global/enviroment";
 import bodyParser from "body-parser";
 import cors from 'cors';
 
-const server = new Server();
+const server = Server.instance;
 
 //bodyParser nos servira para recibir datos del body enviados en las peticiones http
 server.app.use(bodyParser.urlencoded({ extended: true }));
