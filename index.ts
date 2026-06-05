@@ -19,5 +19,5 @@ server.app.use(cors({ origin: true, credentials: true }));
 server.app.use('/', router);
 
  server.start(() => {
-     console.log(`Servidor corriendo en el puerto ${SERVER_PORT}`);
+     console.log(`Servidor corriendo en el puerto ${SERVER_PORT}`, 'TEST');
  });
